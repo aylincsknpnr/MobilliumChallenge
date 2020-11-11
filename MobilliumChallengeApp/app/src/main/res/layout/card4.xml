@@ -1,0 +1,108 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="5dp"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="5dp"
+            android:orientation="vertical"
+            android:weightSum="3">
+
+            <TextView
+                android:textSize="12sp"
+                android:id="@+id/tv_shop_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_weight="0.75"
+                android:singleLine="true"
+                android:textAlignment="center"
+                android:textColor="@color/searchBarTextColor" />
+
+            <TextView
+                android:textSize="12sp"
+                android:id="@+id/tv_shop_definition"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_weight="0.75"
+                android:lines="2"
+                android:textAlignment="center"
+                android:textColor="@color/searchBarPlaceholderColor" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:weightSum="3"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_margin="5dp"
+                    android:id="@+id/iv_shop_image1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY" />
+                <ImageView
+                    android:layout_margin="5dp"
+                    android:id="@+id/iv_shop_image2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:layout_weight="1"
+                    android:scaleType="fitXY" />
+                <ImageView
+                    android:layout_margin="5dp"
+                    android:id="@+id/iv_shop_image3"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY" />
+            </LinearLayout>
+
+            <Button
+                android:textColor="@color/searchBarPlaceholderColor"
+                android:background="@drawable/button_bg"
+                android:layout_margin="10dp"
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.5"
+                android:text="VİTRİNE GİT" />
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/logo"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:elevation="8dp"
+         />
+</RelativeLayout>
